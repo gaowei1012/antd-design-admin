@@ -1,9 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './style/common.less';
 // import App from './App';
 import * as serviceWorker from './serviceWorker';
 import ERouter from './router';
+
+import 'antd/dist/antd.css';
 
 ReactDOM.render(<ERouter />, document.getElementById('root'));
 
