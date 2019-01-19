@@ -1,10 +1,23 @@
 import React from 'react';
 import Header from './../../components/header';
 import NavLeft from './../../components/navleft';
+import menuList from '../../contones/menuConfig';
 import { Row, Col } from 'antd';
 import './index.less';
 
 export default class Home extends React.Component {
+    constructor (props) {
+        super(props);
+
+        this.state = {}
+    }
+
+    componentWillMount () {
+        this.setState({
+            menuList
+        })
+    }
+
     render() {
         return(
             <div>
@@ -12,7 +25,7 @@ export default class Home extends React.Component {
                     <Header username={'执念'}/>
                     <Row>
                         <Col span={3} className='nav-left'>
-                            <NavLeft />
+                            <NavLeft menuList={this.state.menuList} />
                         </Col>
                         <Col span={21} className='right-container'>
                             {this.props.children}
