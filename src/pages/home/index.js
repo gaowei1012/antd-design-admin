@@ -16,10 +16,10 @@ export default class Home extends React.Component {
 
     render() {
         return(
-            <div>
+            <div style={{width: '100%'}}>
                 <div className='welcome-page'>
                     <Header username={'执念'}/>
-                    <Row>
+                    <Row style={{width: '100%'}}>
                         <Col span={3} className='nav-left'>
                             <NavLeft menuList={this.state.menuList} />
                         </Col>

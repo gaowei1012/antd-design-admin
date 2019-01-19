@@ -19,7 +19,7 @@ export default class ERouter extends React.Component {
                                 <Route path='/home'>
                                     <Home>
                                         <Switch>
-                                            <Route path='/home' component={Admin} />
+                                            <Route exact path='/home' component={Admin} />
                                             <Route path='/home/order' component={Order} />
                                             <Redirect to='/home' />
                                         </Switch>

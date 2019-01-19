@@ -8,7 +8,7 @@ export default class Header extends React.Component {
 
     logout = () => {
         console.log('ee')
-        history.push('/')
+        history.push('./')
     }
 
     render() {
