@@ -6,11 +6,7 @@ import { Row, Col } from 'antd';
 import './index.less';
 
 export default class Home extends React.Component {
-    constructor (props) {
-        super(props);
-
-        this.state = {}
-    }
+    state = {};
 
     componentWillMount () {
         this.setState({
